@@ -1,0 +1,18 @@
+[package]
+name = "eastwest-ingest"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "EastWest flow ingestion: parsing, validation, workload resolution, and window aggregation."
+
+[dependencies]
+eastwest-flow = { path = "../eastwest-flow" }
+lattivant-event.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+indexmap.workspace = true
+chrono.workspace = true
+
+[dev-dependencies]
