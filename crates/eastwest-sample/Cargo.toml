@@ -1,0 +1,21 @@
+[package]
+name = "eastwest-sample"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "A sample that ingests flows, aggregates them, and surfaces anomaly context."
+
+[[bin]]
+name = "eastwest-sample"
+path = "src/main.rs"
+
+[dependencies]
+eastwest-flow = { path = "../eastwest-flow" }
+eastwest-ingest = { path = "../eastwest-ingest" }
+eastwest-baseline = { path = "../eastwest-baseline" }
+serde.workspace = true
+serde_json.workspace = true
+chrono.workspace = true
+
+[dev-dependencies]
