@@ -58,3 +58,8 @@ Requires a recent stable Rust toolchain (edition 2021, rustc ≥ 1.80).
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+## Authorized testing only
+
+All tenants, identities, resources and events in this repository are synthetic. Use these tools
+only against systems you own or are explicitly authorized to test.
